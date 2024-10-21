@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<center> <img src="img\GRUPO.png" alt="LOGO" width="200px"  height = "200px"></center>
+<a> <hr>  
+
+  <h1><center><em> Grupo Escoteiro Comandante Santa Rita
+  26° pr</em></center></h1>
+  
+  <hr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+    <title>Área do Instagram</title>
+    <style>
+        .instagram-section {
+            text-align: center;
+            margin: 20px;
+        }
+        .instagram-button {
+            background-color: #E1306C;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .instagram-button:hover {
+            background-color: #C13584;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Animado</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel Simples</title>
+  <style>
+    .carousel-container {
+    
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-slide {
+    min-width: 100%;
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundo com Gradiente</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #9bf589, #3d6424); /* Gradiente diagonal */
+      height: 100vh; /* Altura total da tela */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+  <style>
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #20b358;
+    }
+
+    .whatsapp-icon {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<div class="carousel-container">
+    <div class="carousel-slides">
+      <img src="img\amanhecer.jpg" class="carousel-slide" alt="Imagem 1">
+      <img src="img\meio dia.jpg" class="carousel-slide" alt="Imagem 2">
+      <img src="img\entardecer.jpg" class="carousel-slide" alt="Imagem 3">
+    </div>
+    <div class="prev" onclick="moveSlide(-1)">&#10094;</div>
+    <div class="next" onclick="moveSlide(1)">&#10095;</div>
+  </div>
+  
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+  
+    function moveSlide(direction) {
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      document.querySelector('.carousel-slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+  </script>
+    <div class="container">
+        <button class="animated-button">Clique Aqui!</button>
+    </div>
+
+    <header>
+        <h1>Bem-vindo à Minha Página</h1>
+    </header>
+    <main>
+        <h2>Sobre Mim</h2>
+        <p>Esta é uma página de exemplo para mostrar como criar uma estrutura básica em HTML.</p>
+        <h2>Contato</h2>
+        <p>Você pode me encontrar nas redes sociais!</p>
+    </main>
+    <h1>Envie uma Mensagem pelo WhatsApp!</h1>
+    <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá!%20Quero%20mais%20informações." target="_blank">
+        <button>Enviar Mensagem</button>
+    </a>
+    <h1>Enviar E-mail</h1>
+    <form action="enviar_email.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="assunto">Assunto:</label><br>
+        <input type="text" id="assunto" name="assunto" required><br><br>
+        
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="instagram-section">
+        <h2>Siga-nos no Instagram!</h2>
+        <p>Veja nossas últimas postagens e fique por dentro das novidades.</p>
+        <a href="https://www.instagram.com/seu_perfil/" target="_blank">
+            <button class="instagram-button">Seguir no Instagram</button>
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bruno Lima</p>
+    </footer>
+    <a href="https://wa.me/5541997904348?text=Olá,%20gostaria%20de%20mais%20informações" class="whatsapp-button" target="_blank">
+      <img src="https://image.pngaaa.com/345/2503345-middle.png" alt="WhatsApp" class="whatsapp-icon" width="20" height="20">
+      Fale Conosco
+    </a>
+</body>
+</html>
